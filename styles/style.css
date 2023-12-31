@@ -1,0 +1,324 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+header {
+  background-color: ghostwhite;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  transition: all 0.5s ease;
+  position: sticky;
+  top: 0;
+  z-index: 5;
+}
+header div.logo {
+  display: flex;
+  align-items: center;
+  flex: 6 1 500px;
+  margin-left: 2rem;
+}
+header div.logo img {
+  width: 5vw;
+  height: 10vh;
+  transition: all 1s ease-in-out;
+}
+header div.logo img:hover {
+  transform: rotate(360deg);
+}
+header div.logo h1 {
+  transition: all 0.3s ease-in-out;
+}
+header div.logo h1:hover {
+  color: #09777d;
+}
+header nav {
+  flex: 1 1 400px;
+}
+header nav ul {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+}
+header nav ul a {
+  color: #09777d;
+  font-size: 1.2rem;
+  text-decoration: none;
+  transition: all 0.5s ease-in-out;
+}
+header nav ul a:hover {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: royalblue;
+}
+
+main section.backImg {
+  width: 100%;
+  min-height: 90vh;
+  background-image: url("../resource/Pictures/pexels-photo-416676.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+main section.backImg div.filter {
+  width: 100%;
+  min-height: 90vh;
+  background-color: rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+main section.backImg div.filter h3 {
+  color: azure;
+  font-size: 4.5rem;
+  margin-bottom: 2rem;
+  transition: all 1s ease-in-out;
+}
+main section.backImg div.filter button.start {
+  color: azure;
+  background-color: darkturquoise;
+  font-size: 2rem;
+  padding: 1rem 1.5rem;
+  border: none;
+  border-radius: 1.75rem;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+main section.backImg div.filter button.start:hover {
+  transform: scale(0.8);
+  color: #09777d;
+  background-color: lightblue;
+}
+main section.second {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+main section.second h1 {
+  font-size: 3rem;
+  font-weight: 300;
+  margin: 3rem 0rem;
+  transition: all 1s ease-in-out;
+}
+main section.second section.cards {
+  min-height: 80vh;
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  transition: all 1s ease-in-out;
+}
+main section.second section.cards div.card div.container {
+  overflow: hidden;
+  width: 20vw;
+  height: 40vh;
+  border-radius: 50%;
+}
+main section.second section.cards div.card div.container img {
+  width: 20vw;
+  height: 40vh;
+  border-radius: 50%;
+  transition: all 0.75s ease-in-out;
+}
+main section.second section.cards div.card div.container img:hover {
+  transform: scale(1.15);
+}
+main section.second section.cards div.card h4 {
+  font-size: 2.5rem;
+  font-weight: 300;
+  padding: 1rem 0rem;
+  margin: 0.75rem 0rem;
+}
+main section.second section.cards div.card a {
+  color: azure;
+  background-color: #09777d;
+  font-size: 1.5rem;
+  padding: 0.75rem 1rem;
+  margin: 1rem 0rem;
+  text-decoration: none;
+  border-radius: 2rem;
+  transition: all 0.5s ease-in-out;
+}
+main section.second section.cards div.card a:hover {
+  color: #09777d;
+  background-color: lightblue;
+}
+
+footer {
+  min-height: 40vh;
+  background-color: lightblue;
+  opacity: 0.8;
+}
+footer section.bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+footer section.bottom div.logo {
+  display: flex;
+  align-items: center;
+  padding: 2rem 2rem;
+}
+footer section.bottom div.logo img {
+  width: 5vw;
+  height: 10vh;
+}
+footer section.bottom div.logo h1 {
+  font-size: 2rem;
+  font-weight: 300;
+}
+footer section.bottom nav {
+  padding: 0rem 0rem 2rem 0rem;
+}
+footer section.bottom nav ul {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+}
+footer section.bottom nav ul a {
+  color: #09777d;
+  font-size: 1.5rem;
+  padding: 2rem 2rem;
+  text-decoration: none;
+  transition: all 0.5s ease-in-out;
+}
+footer section.bottom nav ul a:hover {
+  color: royalblue;
+}
+footer section.bottom div.icon {
+  display: flex;
+}
+footer section.bottom div.icon a {
+  padding: 0rem 2.5rem;
+}
+footer section.bottom div.icon img {
+  width: 3.5rem;
+  height: 3.5rem;
+  transition: all 0.5s ease-in-out;
+}
+footer section.bottom div.icon img:hover {
+  transform: scale(1.2);
+}
+
+@media screen and (max-width: 1100px) {
+  main section.second h1 {
+    font-size: 2.3rem;
+  }
+}
+@media screen and (max-width: 950px) {
+  header div.logo img {
+    width: 50px;
+    height: 50px;
+  }
+  main section.backImg div.filter h3 {
+    font-size: 4rem;
+  }
+}
+@media screen and (max-width: 935px) {
+  nav ul {
+    margin-top: 0.5rem;
+  }
+  main section.second section.cards div.card img {
+    width: 20vw;
+    height: 30vh;
+  }
+  main section.second section.cards div.card h4 {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 840px) {
+  main section.backImg div.filter h3 {
+    font-size: 3.5rem;
+  }
+  main section.second h1 {
+    font-size: 1.8rem;
+  }
+}
+@media screen and (max-width: 740px) {
+  main section.backImg div.filter h3 {
+    font-size: 3rem;
+  }
+  main section.second h1 {
+    font-size: 1.6rem;
+  }
+  main section.second section.cards div.card img {
+    width: 20vw;
+    height: 25vh;
+  }
+  main section.second section.cards div.card h4 {
+    font-size: 1.7rem;
+  }
+}
+@media screen and (max-width: 630px) {
+  main section.backImg div.filter h3 {
+    font-size: 2.3rem;
+    margin-bottom: 1rem;
+  }
+  main section.backImg div.filter button.start {
+    font-size: 1.5rem;
+    padding: 0.75rem 1rem;
+  }
+  main section.second h1 {
+    font-size: 1.3rem;
+  }
+  main section.second section.cards div.card img {
+    width: 20vw;
+    height: 25vh;
+  }
+  main section.second section.cards div.card h4 {
+    font-size: 1.5rem;
+  }
+  main section.second section.cards div.card a {
+    font-size: 1.2rem;
+  }
+  footer {
+    min-height: 32vh;
+  }
+  footer section.bottom div.logo {
+    padding: 0rem;
+  }
+  footer section.bottom div.logo h1 {
+    font-size: 1.5rem;
+  }
+  footer section.bottom nav ul li a {
+    font-size: 1.2rem;
+    padding: 0rem 0.5rem;
+  }
+  footer section.bottom div.icon a {
+    padding: 0rem 0.75rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  main section.backImg div.filter h3 {
+    font-size: 1.8rem;
+  }
+  main section.backImg div.filter button.start {
+    font-size: 1.2rem;
+    padding: 0.5rem 0.75rem;
+  }
+  main section.second h1 {
+    font-size: 1.3rem;
+  }
+  main section.second section.cards {
+    min-height: 60vh;
+  }
+  main section.second section.cards div.card img {
+    width: 20vw;
+    height: 20vh;
+  }
+  main section.second section.cards div.card h4 {
+    font-size: 1.5rem;
+  }
+  main section.second section.cards div.card a {
+    font-size: 1rem;
+  }
+}/*# sourceMappingURL=style.css.map */
