@@ -1,6 +1,12 @@
+<<<<<<< HEAD
 # 夏威夷旅遊服務網站
 
 這是我在初學時製作的第二個網站，主要想製作旅遊商業類型的網站，完成於 2023/10/30。
+=======
+# Hawaii-Journey-website 夏威夷旅遊服務網站
+
+介紹：用基礎的 HTML 和 CSS 來製作介紹夏威夷的旅遊網站，並學習用 JS 來控制navbar的顏色和學習用 SCSS 來撰寫 CSS，並使用 media query 來達成 RWD 功能。
+>>>>>>> 3fdee77b6cc4329d1f9c1ae0d2eba3fdfe052bfc
 
 ## 功能
 
